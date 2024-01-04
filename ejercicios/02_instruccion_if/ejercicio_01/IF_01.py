@@ -46,6 +46,7 @@ class App(customtkinter.CTk):
             alert(title="Mensaje", message=mensaje_mayor)
         else:
             alert(title="Mensaje", message=mensaje_menor)
+        
 
 
 
