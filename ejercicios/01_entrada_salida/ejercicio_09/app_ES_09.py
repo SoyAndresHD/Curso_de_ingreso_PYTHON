@@ -48,7 +48,9 @@ class App(customtkinter.CTk):
 
         sueldo_actualizado = float1 * float2 / 100
 
-        resultado = alert(title="Sueldo actualizado", message=sueldo_actualizado)
+        mensaje = "El nuevo sueldo es {0}".format(sueldo_actualizado)
+
+        resultado = alert(title="Sueldo actualizado", message=mensaje)
         
     
 if __name__ == "__main__":
