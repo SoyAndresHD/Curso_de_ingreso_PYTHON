@@ -35,9 +35,6 @@ class App(customtkinter.CTk):
     def btn_mostrar_on_click(self):
         edad = self.txt_edad.get()
 
-<<<<<<< HEAD:00-Unidades/02_if/Ejercicios_If/IF_app_01.py
-         
-=======
         numero_entero = int(edad)
 
         mensaje_mayor = "Usted tiene {0} años".format(numero_entero)
@@ -55,7 +52,6 @@ class App(customtkinter.CTk):
 
          
     
->>>>>>> bc722a49c7d1e5b5a19a02ca85b8276bae1ef058:ejercicios/02_instruccion_if/ejercicio_01/IF_01.py
 if __name__ == "__main__":
     app = App()
     app.geometry("300x300")
