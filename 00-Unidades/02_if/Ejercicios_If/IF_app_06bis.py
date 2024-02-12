@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre:Nelson
+apellido:Chuquen
 ---
 Ejercicio: if_06bis
 ---
@@ -39,7 +39,20 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        altura = int(self.txt_altura.get())
+
+        if altura < 160:
+            posicion = "Base"
+        elif 160 <= altura <= 179:
+         posicion = "Escolta"
+        elif 180 <= altura <= 199:
+            posicion = "Alero"
+        else:
+            posicion = "Ala-Pívot o Pívot"
+
+        mensaje = "La Posición del Jugador es {0}".format(posicion)
+
+        posicion_jugador = alert(title="Determinar posición de jugador de baloncesto", message=mensaje)
 
         
         
